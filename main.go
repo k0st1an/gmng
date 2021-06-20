@@ -11,7 +11,7 @@ func main() {
 	log.SetFlags(log.Ldate | log.Lmicroseconds | log.Lshortfile)
 
 	app := cli.NewApp()
-	app.Version = "0.0.1"
+	app.Version = "0.0.2"
 	app.Name = "gmng"
 	app.Before = initial
 	app.Flags = []cli.Flag{

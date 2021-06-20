@@ -19,7 +19,7 @@ func newGlacierSession() *session.Session {
 				Region: aws.String(conf.Region),
 				Credentials: credentials.NewStaticCredentials(
 					conf.AccessKeyID,
-					conf.SecretAcccessKey,
+					conf.SecretAccessKey,
 					"",
 				),
 			},

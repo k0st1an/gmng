@@ -9,10 +9,10 @@ import (
 
 // Config ..
 type Config struct {
-	Region           string
-	AccessKeyID      string `yaml:"access_key_id"`
-	SecretAcccessKey string `yaml:"secret_acccess_key"`
-	Vault            string
+	Region          string
+	AccessKeyID     string `yaml:"access_key_id"`
+	SecretAccessKey string `yaml:"secret_access_key"`
+	Vault           string
 }
 
 var conf Config
