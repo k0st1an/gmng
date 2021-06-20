@@ -1,0 +1,14 @@
+name: ci
+on: push
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: "ubuntu-20.04"
+    container: golang:1.16
+    steps:
+      - uses: actions/checkout@v2
+      - run: make linux
+      - run: make darwin
+      - uses: actions/upload-artifact@v2
+        with:
+          path: gmng-amd64-*
