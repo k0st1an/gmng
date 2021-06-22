@@ -5,6 +5,6 @@ linux:
 	GOOS=linux GOARCH=amd64 go build -o gmng-amd64-linux .
 
 install:
-	go build .
+	go install .
 
 .PHONY: darwin linux install
